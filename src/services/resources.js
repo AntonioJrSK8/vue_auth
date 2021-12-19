@@ -28,6 +28,6 @@ export class Jwt{
 
 const Time = Vue.resource('http://localhost:3000/api/times');
 
-//const User = Vue.resource('http://localhost:3000/api/users');
+const User = Vue.resource('http://localhost:3000/api/users');
 
 export {Time, User};

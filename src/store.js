@@ -55,7 +55,8 @@ const actions = {
         return JwtToken.accessToken(email, password)
             .then(response => {
                 context.commit('authenticated');
-                context.dispatch('getUser');
+
+                //context.dispatch('getUser');
             return response;
         })
     },
@@ -71,7 +72,7 @@ export default new Vuex.Store({
     state,
     getters: {
         timesLibertadores: state => state.times.slice(0, 6),
-        timesRebaixados: state => state.times.slice(16, 20),
+        timesRebaixados:   state => state.times.slice(16, 20),
     },
     mutations,
     actions
