@@ -55,8 +55,7 @@ const actions = {
         return JwtToken.accessToken(email, password)
             .then(response => {
                 context.commit('authenticated');
-
-                //context.dispatch('getUser');
+                context.dispatch('getUser');
             return response;
         })
     },

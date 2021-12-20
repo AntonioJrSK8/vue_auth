@@ -1,11 +1,5 @@
 import Vue from 'vue';
 import VueResource from 'vue-resource';
-// import AxiosPlugin from 'axios';
- 
-// Vue.use(AxiosPlugin)
-
-// var cors = require('cors')
-// Vue.use(cors);
 
 Vue.use(VueResource);
 
@@ -26,8 +20,7 @@ export class Jwt{
     }
 }
 
-const Time = Vue.resource('http://localhost:3000/api/times');
-
-const User = Vue.resource('http://localhost:3000/api/users');
+const Time = Vue.resource('http://localhost:3000/times');
+const User = Vue.resource('http://localhost:3000/user');
 
 export {Time, User};
